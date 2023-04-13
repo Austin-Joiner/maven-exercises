@@ -9,13 +9,18 @@ public class Main {
         System.out.println("Input here: ");
         String inputHere = input.nextLine();
 
-        System.out.println("You entered in " + inputHere + ".");
+        System.out.println("You entered in " + inputHere + ".\n");
 
         if(StringUtils.isNumeric(inputHere)) {
-            System.out.println("You typed in a number!");
+            System.out.println("You typed in a number!\n");
         } else {
-            System.out.println("This is not a number.");
+            System.out.println("This is not a number.\n");
         }
 
+
+        System.out.println("This is your input with the cases swapped: " + StringUtils.swapCase(inputHere));
+        System.out.println();
+        System.out.println("This is your input reversed: " + StringUtils.reverse(inputHere));
+        System.out.println();
     }
 }
